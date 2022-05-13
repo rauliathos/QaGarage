@@ -14,6 +14,11 @@ public class Car extends Vehicle {
     }
 
     @Override
+    public String toString() {
+        return "Car [numberOfDoors=" + numberOfDoors + ", electric=" + electric + ", model=" + model + "]";
+    }
+
+    @Override
     public int fixCost() {
         if (isFixVehicle() == true && electric == true) {
             return 1000;
