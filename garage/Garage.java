@@ -7,14 +7,21 @@ public class Garage  {
    
    public String addVehicle(Vehicle newVehicle) {
     garage.add(newVehicle);
-    return newVehicle +"to be fixed";
+    return newVehicle +" to be fixed";
 }
    
    public String removeVehicle(Vehicle newVehicle) {
        garage.remove(newVehicle);
-       return newVehicle +"was removed from the garage";
+       return newVehicle +" was removed from the garage";
 
 }
    
-//   public String getVehicle
+   public String getVehicle(int x) {
+       garage.get(x);
+   return "here we go!!";
+   }
+   
+   public String fixVehicle(int x) {
+     return   garage.get(0).fixCost()+" is the cost ";
+   }
 }
