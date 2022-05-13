@@ -12,9 +12,13 @@ public Bike(boolean fixVehicle, boolean isElectric) {
 
 @Override
 public int fixCost() {
-    // TODO Auto-generated method stub
+    if (isFixVehicle()==true && isElectric==true) {
+        return 150;
+    }else if(isFixVehicle()==true && isElectric==false) {
+        return 50;
+    }else {
     return 0;
-}
+}}
 
 
    

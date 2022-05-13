@@ -13,13 +13,16 @@ public class Boat extends Vehicle {
 
     @Override
     public int fixCost() {
-        if (isFixVehicle() && numberOfEngines<=1&& capacity<=4) {
+        if (isFixVehicle()==true && numberOfEngines<=1&& capacity<=4) {
             return 2000;
-        }else if(isFixVehicle() && numberOfEngines<=1&& capacity>4) {
+        }else if(isFixVehicle()==true && numberOfEngines<=1&& capacity>4) {
             return 2500;
-        }else if (())
+        }else if (isFixVehicle()==true && numberOfEngines>1 && capacity<=4 || capacity>4 ) {
+            return 5000;
+        }else {
+            System.out.println("Your boat don't need to be fixed!");
         return 0;
-    }
+    }}
 
    
     
