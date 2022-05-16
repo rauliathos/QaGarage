@@ -27,6 +27,8 @@ public class Runner {
     serviceGarage.addVehicle(car2);
     serviceGarage.addVehicle(car1);
     serviceGarage.addVehicle(teslaCar1);
+    System.out.println(serviceGarage.carsInGarage());
+
     System.out.println(serviceGarage.getVehicle(0));
     System.out.println(serviceGarage.fixVehicle(5));
     System.out.println(serviceGarage.fixVehicle(4));
@@ -34,7 +36,10 @@ public class Runner {
     System.out.println(serviceGarage.fixVehicle(2));
     System.out.println(serviceGarage.fixVehicle(1));
     System.out.println(serviceGarage.fixVehicle(0));
+    
+    System.out.println(serviceGarage.carsInGarage());
     }
+    
     
     
     
